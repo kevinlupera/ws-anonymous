@@ -110,7 +110,7 @@ function App() {
                       : ""
                   }`}
                   id="telephone"
-                  type="telephone"
+                  type="tel"
                   placeholder="0987654321"
                   defaultCountry="EC"
                   required
