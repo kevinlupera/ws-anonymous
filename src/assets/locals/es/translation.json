@@ -1,0 +1,16 @@
+{
+  "hello": "Hola",
+  "anonymous": " Anónimo",
+  "write": "Escribe ",
+  "without_save": "sin guardar",
+  "contacts": "contactos",
+  "phrase": "Una solución que nos puede ahorrar tiempo para Whatsapp",
+  "number_phone": "Número de teléfono",
+  "number_phone_is_invalid": "Número de teléfono es inválido",
+  "number_phone_is_required": "Número de teléfono es requerido",
+  "your_message": "Tu mensaje",
+  "submit": "Enviar",
+  "copyrigth": "2020 ",
+  "power_by": "Creado por ",
+  "contact_me": " Contacto conmigo"
+}
