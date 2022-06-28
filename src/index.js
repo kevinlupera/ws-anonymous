@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./i18nextConf";
-// import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 ReactDOM.render(
     <Suspense fallback="...">
@@ -14,16 +14,16 @@ ReactDOM.render(
     </Suspense>
 
 , document.getElementById("root"));
-// serviceWorkerRegistration.register();
-if (navigator.serviceWorker.controller) {
-    console.log('Service worker already registered.')
-  } else {
-    navigator.serviceWorker.register('service-worker.js', {
-      scope: './'
-    }).then(function(reg) {
-      console.log('Service worker has been registered for scope:'+ reg.scope);
-    });
-  }
+serviceWorkerRegistration.register();
+// if (navigator.serviceWorker.controller) {
+//     console.log('Service worker already registered.')
+//   } else {
+//     navigator.serviceWorker.register('/npm run prepublishservice-worker.js', {
+//       scope: './'
+//     }).then(function(reg) {
+//       console.log('Service worker has been registered for scope:'+ reg.scope);
+//     });
+//   }
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
