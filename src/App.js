@@ -104,7 +104,7 @@ function App() {
                 <PhoneInput
                   value={telephone}
                   onChange={setTelephone}
-                  className={`shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out ${
+                  className={`shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition  duration-300 ease-in-out ${
                     telephone && !isValidPhoneNumber(telephone)
                       ? "border-red-500"
                       : ""
@@ -115,17 +115,12 @@ function App() {
                   defaultCountry="EC"
                   required
                 />
-                {telephone ? (
-                  isValidPhoneNumber(telephone) ? undefined : (
+                {telephone &&
+                  (isValidPhoneNumber(telephone) ? undefined : (
                     <p className="text-red-500 text-xs italic">
                       {t("number_phone_is_invalid")}
                     </p>
-                  )
-                ) : (
-                  <p className="text-red-500 text-xs italic">
-                    {t("number_phone_is_required")}
-                  </p>
-                )}
+                  ))}
                 <label
                   className="block text-blue-300 py-2 font-bold mb-2"
                   htmlFor="emailaddress"
@@ -133,7 +128,7 @@ function App() {
                   {t("your_message")}
                 </label>
                 <input
-                  className="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                  className="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition  duration-300 ease-in-out"
                   id="message"
                   type="text"
                   value={message}
@@ -144,7 +139,7 @@ function App() {
 
               <div className="flex items-center justify-between pt-4">
                 <button
-                  className="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                  className="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition  duration-300 ease-in-out"
                   type="submit"
                 >
                   {t("submit")}
