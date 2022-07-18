@@ -49,7 +49,7 @@ function App() {
         <div className="w-full container mx-auto">
           <div className="w-full flex items-center justify-between">
             <a
-              className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+              className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-xl md:text-2xl lg:text-4xl"
               href="/"
             >
               <p className="">
