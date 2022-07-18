@@ -14,10 +14,7 @@ function App() {
     { value: "en", label: "English" },
   ];
 
-  const [selectedOption, setSelectedOption] = useState({
-    value: "es",
-    label: "Spanish",
-  });
+  const [selectedOption, setSelectedOption] = useState({ value: "en", label: "English" },);
   function submit() {
     if (telephone && isValidPhoneNumber(telephone)) {
       window.open(
@@ -63,6 +60,7 @@ function App() {
 
             <div className="flex w-1/2 justify-end content-center">
               <Select
+              className="text-white"
                 defaultValue={selectedOption}
                 onChange={(e) => langHandleChange(e)}
                 options={options}
