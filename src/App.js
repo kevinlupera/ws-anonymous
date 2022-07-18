@@ -66,6 +66,9 @@ function App() {
                 onChange={(e) => langHandleChange(e)}
                 options={options}
                 isSearchable={false}
+                components={{
+                  IndicatorSeparator: () => null
+                }}
               />
 
               <a
