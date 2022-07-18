@@ -10,8 +10,8 @@ function App() {
   const [telephone, setTelephone] = useState("");
   const [message, setMessage] = useState("");
   const options = [
-    { value: "es", label: "Spanish" },
     { value: "en", label: "English" },
+    { value: "es", label: "Spanish" },
   ];
 
   const [selectedOption, setSelectedOption] = useState({ value: "en", label: "English" },);
