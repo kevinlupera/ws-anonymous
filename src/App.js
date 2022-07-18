@@ -145,6 +145,7 @@ function App() {
                 <PhoneInput
                   value={telephone}
                   onChange={setTelephone}
+                  autoComplete="off"
                   className={`shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition  duration-300 ease-in-out ${
                     telephone && !isValidPhoneNumber(telephone)
                       ? "border-red-500"
