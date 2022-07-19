@@ -25,7 +25,7 @@ function App() {
     }
   }
   const generateUrl = (telephone, message) => {
-    return `https://api.whatsapp.com/send/?phone=${telephone}&text=${
+    return `https://wa.me/${telephone}?text=${
       message ? message : t("hello")
     }`;
   };
